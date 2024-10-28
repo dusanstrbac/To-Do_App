@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#createTask {
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.TaskList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.Task {
+    border: 1px solid black;
+    height: 300px;
+    width: 280px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+}
+
+.FinishedTask {
+    border: 1px solid black;
+    height: 300px;
+    width: 280px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    background-color: lime;
+}
+
+#taskName {
+    text-align: center;
+    height: fit-content;
+}
+
+#taskDesc {
+    height: 70%;
+    font-size: 18px;
+}
+
+.TaskButtons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#deleteButton {
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#doneButton {
+    color: white;
+    background-color: green;
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Modal for creating task lists */ 
+
+.Modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    z-index: 5;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    visibility: hidden;
+}
+
+.Input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Input label {
+    color: white;
+    font-size: 40px;
+}
+
+.Input input {
+    height: 40px;
+    width: 420px;
+    font-size: 20px
+}
+
+.ModalButtons {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.ModalButtons button {
+    padding: 20px 80px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#ModalCancel {
+    background-color: red;
+    color: white;
+}
+
+#ModalCreate {
+    background-color: green;
+    color: white;
+}
+
+#ModalError {
+    color: red;
+    font-size: 30px;
+}
